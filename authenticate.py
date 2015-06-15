@@ -48,7 +48,6 @@ def auth_me(email,password):
                                               )
         
     if login_res.status_code == 200:
-        #print "Login Successfully!"
         return coursera_session
     else:
         return -1

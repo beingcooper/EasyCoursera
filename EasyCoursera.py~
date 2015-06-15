@@ -89,7 +89,6 @@ def main(email,password,cour_id,new_dir):
             if get_ctime("/home/beingcooper/Downloads/"+fl) > st_time:
                 file_count+=1
         time.sleep(15)    
-    
     print "All files downloaded." 
     pr.prettify(st_time,path, to_save, week_tags)
     print "A course folder with the name "+ cour_id + " is created on your desktop."
