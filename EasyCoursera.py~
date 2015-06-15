@@ -83,10 +83,10 @@ def main(email,password,cour_id,new_dir):
     print 
     
     file_count = 0
-    while(file_count < tot_files):
+    while(file_count < (tot_files+2)):
         file_count=0
-        for fl in os.listdir(path):
-            if get_ctime(path + fl) > st_time:
+        for fl in os.listdir("/home/beingcooper/Downloads/"):
+            if get_ctime("/home/beingcooper/Downloads/"+fl) > st_time:
                 file_count+=1
         time.sleep(15)    
     
