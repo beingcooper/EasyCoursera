@@ -7,6 +7,6 @@ It will allow you to download all the lecture videos of a Coursera course with o
 This will serve as a better option as compare to the current faciltiy of downloading lectures using individual links.
 
 ## How to Run
-Run EasyCoursera.Py and Enter the Authentication Details
+Run EasyCoursera.Py and follow the instructions :)
 
-*in progress.....*
+
