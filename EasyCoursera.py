@@ -5,6 +5,8 @@ import webbrowser
 import time
 import authenticate as auth
 import prettify as pr
+import getpass as gp
+import platform as pf
 
 
 def get_ctime(file):
@@ -65,7 +67,7 @@ def main(email,password,cour_id,new_dir):
                     tot_files+=1
                     odd+=1
                 else:
-                    pass
+                    
                     webbrowser.open(url)
                     time.sleep(2)               
                     
@@ -99,12 +101,17 @@ def main(email,password,cour_id,new_dir):
 if __name__ == "__main__":
     
     email = str(raw_input("Enter registered email address : "))    
-    password = str(raw_input("Enter password : "))    
+    password = str(gp.getpass("Enter password : "))    
     cour_id = str(raw_input("Enter Coursera Course ID : ")) 
     print 
-    cur_dir = os.getcwd()
-    new_dir = cur_dir.split("/")
-    new_dir = "/" + new_dir[1] + "/" + new_dir[2]
+    
+    cur_os = pf.system()
+    cur_user = gp.getuser()
+    if cur_os == "Windows":
+    	new_dir = "C:/Users/"+cur_user
+    else:
+    	new_dir = "/home/"+cur_user
+
     
     main(email, password, cour_id, new_dir)
     
