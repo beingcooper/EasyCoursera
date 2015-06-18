@@ -10,7 +10,7 @@ This will serve as a better option as compare to the current faciltiy of downloa
 ## Dependencies
 
 1. Python 2.7
-2. BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/)
+2. [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/)
 
 ## How to Run
 Run EasyCoursera.Py and follow the instructions :)
