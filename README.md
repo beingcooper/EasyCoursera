@@ -8,7 +8,9 @@ It will allow you to download all the lecture videos of a Coursera course with o
 This will serve as a better option as compare to the current faciltiy of downloading lectures using individual links.
 
 ## Dependencies
+
 Python 2.7
+
 BeautifulSoup
 
 ## How to Run
