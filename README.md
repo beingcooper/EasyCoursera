@@ -15,8 +15,14 @@ This will serve as a better option as compare to the current faciltiy of downloa
 ## How to Run
 Run EasyCoursera.Py and follow the instructions :)
 
+###Screenshots
+
 ![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc1.png)
+
 ![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc2.png)
+
 ![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc3.png)
+
 ![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc4.png)
+
 ![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc5.png)
