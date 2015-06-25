@@ -26,14 +26,21 @@ def main(email,password,cour_id,new_dir):
     cont = coursera_session.get(url, timeout=30)
     soup = BeautifulSoup(cont.text, 'html.parser')
         
+    week_tags=[]
+    for week in soup.find_all("div",{"class":"course-item-list-header"}):
+        week_tags.append(((week.find("h3").text).strip()).encode("utf-8"))
+        
+    if len(week_tags) == 0:
+	print "Either incorrect course ID or you are not enrolled in that course!"
+	print "(Make sure you have accepted the Honor Code of that course)"
+	return  
+    
     os.chdir(new_dir+"/Desktop")
     os.mkdir(cour_id)
     os.chdir(cour_id)
     
-    week_tags=[]
-    for week in soup.find_all("div",{"class":"course-item-list-header"}):
-        week_tags.append(((week.find("h3").text).strip()).encode("utf-8"))
-      
+    
+    
     index = 0 
     tot_files=0
     time_attr = time.ctime().split()
