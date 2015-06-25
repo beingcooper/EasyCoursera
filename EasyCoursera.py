@@ -23,7 +23,7 @@ def main(email,password,cour_id,new_dir):
         print "Login failed!"
         return
     
-    cont = coursera_session.get(url, timeout=3)
+    cont = coursera_session.get(url, timeout=30)
     soup = BeautifulSoup(cont.text, 'html.parser')
         
     os.chdir(new_dir+"/Desktop")
@@ -66,8 +66,7 @@ def main(email,password,cour_id,new_dir):
                     urllib.urlretrieve(url,loc+"/subtitle.srt")
                     tot_files+=1
                     odd+=1
-                else:
-                    
+                else:                    
                     webbrowser.open(url)
                     time.sleep(2)               
                     
@@ -100,6 +99,7 @@ def main(email,password,cour_id,new_dir):
 
 if __name__ == "__main__":
     
+    print "\n**Make sure you are logged in to your Coursera Account from your default web browser**\n"
     email = str(raw_input("Enter registered email address : "))    
     password = str(gp.getpass("Enter password : "))    
     cour_id = str(raw_input("Enter Coursera Course ID : ")) 
