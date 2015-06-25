@@ -82,7 +82,7 @@ def main(email,password,cour_id,new_dir):
         
         index = index + 1
         os.chdir("..")
-        time.sleep(5)
+        time.sleep(4)
     
     path = new_dir + "/Downloads/"
     to_save = new_dir + "/Desktop/" + cour_id + "/"   
