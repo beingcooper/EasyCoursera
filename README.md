@@ -1,5 +1,5 @@
 # EasyCoursera
-Download all the Coursera video lectures of a course with a single click!
+A Python package to download all the Coursera video lectures of a course with a single click!
 
 
 ## Introduction
@@ -12,17 +12,6 @@ This will serve as a better option as compare to the current faciltiy of downloa
 1. Python 2.7
 2. [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/)
 
-## How to Run
-Run EasyCoursera.Py and follow the instructions :)
-
-###Screenshots
-
-![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc1.png)
-
-![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc2.png)
-
-![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc3.png)
-
-![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc4.png)
-
-![Image](https://github.com/beingcooper/EasyCoursera/blob/master/images/sc5.png)
+## How to Install
+1. Install the package - pip install easy_coursera
+2. In Python, import the package and run - easy_coursera.start()
