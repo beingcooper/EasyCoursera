@@ -104,11 +104,11 @@ def main(email,password,cour_id,new_dir):
     print "Thank you for using EasyCoursera. Happy to Help :)"
     
 
-if __name__ == "__main__":
+def start():
     
     print "\n**Make sure you are logged in to your Coursera Account from your default web browser**\n"
     email = str(raw_input("Enter registered email address : "))    
-    password = str(gp.getpass("Enter password : "))    
+    password = str(gp.getpass("Enter password (Typing will be hidden): "))    
     cour_id = str(raw_input("Enter Coursera Course ID : ")) 
     print 
     

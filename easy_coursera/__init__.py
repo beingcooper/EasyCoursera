@@ -1,0 +1,1 @@
+from EasyCoursera import start
